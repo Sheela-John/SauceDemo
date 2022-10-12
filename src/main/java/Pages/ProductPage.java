@@ -16,16 +16,15 @@ public class ProductPage extends TestBase {
 	public ProductPage() {
 		PageFactory.initElements(driver, this);
 	}
-	public String getProductName()
-	{
+
+	public String getProductName() {
 		return productName.getText();
 	}
-	public CartPage addToCart() throws InterruptedException
-	{
+
+	public CartPage addToCart() throws InterruptedException {
 		Thread.sleep(3000);
-	
-		
+
 		addToCartBtn.click();
-		return new CartPage(); 
+		return new CartPage();
 	}
 }

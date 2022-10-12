@@ -24,15 +24,13 @@ public class CartPage extends TestBase {
 		Thread.sleep(3000);
 		String productname = "";
 		Thread.sleep(8000);
-		List<WebElement> product = driver
-				.findElements(By.xpath("//div[@class='inventory_item_name']"));
-		
+		List<WebElement> product = driver.findElements(By.xpath("//div[@class='inventory_item_name']"));
 
 		for (int i = 0; i <= product.size(); i++) {
-			 productname = product.get(i).getText();
+			productname = product.get(i).getText();
 
 			if (productname.equals(pName)) {
-				//product.get(i).click();
+
 				break;
 			}
 		}

@@ -32,7 +32,6 @@ public class CartPageTest extends TestBase {
 
 		loginPage = new LoginPage();
 		homePage=new HomePage();
-		//homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		cartPage=new CartPage();
 	}
 	@DataProvider
@@ -43,10 +42,7 @@ public class CartPageTest extends TestBase {
 	@Test(dataProvider = "getSauceDemoTestData")
 	public void verifyProduct(String filter,String pname) throws InterruptedException, IOException
 	{
-		//homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		//productPage=homePage.selectProduct(pname);
 		
-		//productPage.addToCart();
 		String name=cartPage.viewProduct(pname);
 		boolean val;
 		if(name.equals(pname))

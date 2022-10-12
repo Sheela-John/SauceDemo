@@ -30,6 +30,7 @@ public class LoginPageTest extends TestBase {
 
 	}
 
+			
 	@Test
 	public void loginTest() throws IOException {
 

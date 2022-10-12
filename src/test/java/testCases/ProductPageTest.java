@@ -33,7 +33,6 @@ public class ProductPageTest extends TestBase{
 
 		loginPage = new LoginPage();
 		homePage = new HomePage();
-		//homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	@DataProvider
 	public Object[][] getSauceDemoTestData() {

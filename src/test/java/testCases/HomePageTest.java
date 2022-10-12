@@ -22,7 +22,7 @@ public class HomePageTest extends TestBase {
 	public void setUp() {
 
 		loginPage = new LoginPage();
-		homePage=new HomePage();
+		homePage = new HomePage();
 	}
 
 	@DataProvider
@@ -31,26 +31,14 @@ public class HomePageTest extends TestBase {
 		return data;
 	}
 
-	//@Test(priority = 1, dataProvider = "getSauceDemoTestData")
-//	public void verifyFilter(String filter, String pname) {
-		//homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-	//	try {
-			
-		//	homePage.productSearch(filter);
-		//} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			//e.printStackTrace();
-		//}
-	//}
-
-	@Test(priority = 1,dataProvider = "getSauceDemoTestData")
+	@Test(priority = 1, dataProvider = "getSauceDemoTestData")
 	public void verifyselectProduct(String filter, String pname) {
-		//homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		
 		try {
-			
+
 			homePage.productSearch(filter);
 			homePage.selectProduct(pname);
-					
+
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
